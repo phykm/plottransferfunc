@@ -1,4 +1,4 @@
-# myproj
+- define and plot rational transfer function of linear digital filters on GUI
 
 ## Project setup
 ```
@@ -15,10 +15,3 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
