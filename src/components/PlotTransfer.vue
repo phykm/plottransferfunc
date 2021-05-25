@@ -25,6 +25,7 @@
           />
         </div>
       </div>
+      <div>Numerator coefficients: {{ coefficientZero }}</div>
     </div>
 
     <div style="padding:5px;">
@@ -45,6 +46,7 @@
           />
         </div>
       </div>
+      <div>Denominator coefficients: {{ coefficientPole }}</div>
     </div>
     <div style="padding:5px;">
       <div style="display:inline;padding:5px;">
@@ -202,8 +204,23 @@ export default {
     }
   },
   computed: {
-    hoge: function(){
-      return this.input+this.$props.msg;
+    coefficientZero: function(){
+      let num = Calc.arrageToComplexes(this.zeroStatus)
+      let coeff = Calc.coefficients(num)
+      let realPart = []
+      coeff.forEach(v=>{
+        realPart.push(v.re)
+      })
+      return realPart
+    },
+    coefficientPole: function(){
+      let num = Calc.arrageToComplexes(this.poleStatus)
+      let coeff = Calc.coefficients(num)
+      let realPart = []
+      coeff.forEach(v=>{
+        realPart.push(v.re)
+      })
+      return realPart
     }
   }
 }
