@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <PlotTransfer msg="Welcome to Your Vue.js App"  title= "PlotTransfer"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PlotTransfer from './components/PlotTransfer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PlotTransfer
   }
 }
 </script>
